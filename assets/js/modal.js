@@ -60,6 +60,27 @@ const workData = [
     sourceLink: 'https://github.com/erkhemtugsB/car_rental',
     liveLink: 'https://car-rental-3teo.onrender.com/dashboard.html',
   },
+
+  {
+    projectNumber: 5,
+    title: 'Online Store inventory manager',
+    projectDetail: 'An online store inventory manager designed to assist store owners to manage their inventory, sales, and customer data. The application is designed to provide a user-friendly interface for store owners to manage their store.',
+    Img: 'ProjectImages/online.shop.png',
+    githubIcon: './images/popup-github.svg',
+    liveIcon: './images/popup-live.svg',
+    Tech: [
+      'HTML',
+      'JavaScript',
+      'CSS',
+      'TailwindCSS',
+      'REST API',
+      'Flask',
+      'Git',
+      'CI/CD',
+    ],
+    sourceLink: 'https://github.com/erkhemtugsB/online-store',
+    liveLink: 'https://github.com/erkhemtugsB/online-store',
+  },
   
 ];
 
