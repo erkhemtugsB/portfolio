@@ -1,395 +1,366 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="assets/css/global.css" />
-    <link rel="stylesheet" href="assets/css/navbar.css" />
-    <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
-    <link rel="stylesheet" href="assets/css/modal.css" type="text/css" />
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
-    <title>Erik Portfolio</title>
-  </head>
 
-  <body>
-    <!-- First page start -->
-    <header>
-      <nav class="navbar">
-        <div class="logo"><a href="#">Welcome</a></div>
-        <ul class="menu">
-          <li><a class="menu-item profile" href="#profile">Work</a></li>
-          <li><a class="menu-item about" href="#about">About</a></li>
-          <li><a class="menu-item contact" href="#contact">Contact</a></li>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="assets/css/global.css" />
+  <link rel="stylesheet" href="assets/css/navbar.css" />
+  <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+  <link rel="stylesheet" href="assets/css/modal.css" type="text/css" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <title>Erik Portfolio</title>
+</head>
+
+<body>
+  <!-- First page start -->
+  <header>
+    <nav class="navbar">
+      <div class="logo"><a href="#">Welcome</a></div>
+      <ul class="menu">
+        <li><a class="menu-item profile" href="#profile">Work</a></li>
+        <li><a class="menu-item about" href="#about">About</a></li>
+        <li><a class="menu-item contact" href="#contact">Contact</a></li>
+      </ul>
+      <button type="button" class="hamburger">
+        <!-- material icons https://material.io/resources/icons/ -->
+        <i class="menuIcon material-icons">menu</i>
+        <i class="closeIcon material-icons">close</i>
+      </button>
+    </nav>
+  </header>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-NCHDQM1S0Q"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-NCHDQM1S0Q');
+  </script>
+
+  <div class="background-img">
+    <div class="headline-container">
+      <section class="hero-container">
+        <h1>
+          Hey there. I'm Erik <br /><span>I'm a software developer</span>
+        </h1>
+        <p>
+          Are you looking for a FullStack developer to bring your idea
+          to life? Look no further! With my experience and expertise, I can
+          help you build a product, feature, or website that not only meets
+          your needs but exceeds your expectations. Don't wait any longer -
+          contact me today to get started on your next big project!
+        </p>
+      </section>
+
+      <div class="social-container">
+        <ul>
+
+          <li>
+            <a href="https://www.linkedin.com/in/erkhemtugs-bayar-ochir-8263ba239/" target="_blank">
+              <img src="./images/Linkedin icon.svg" alt="Linkedin-icon" />
+            </a>
+          </li>
+
+          <li>
+            <a href="https://github.com/erkhemtugsB" target="_blank">
+              <img src="./images/github.svg" alt="GitHub-icon" />
+            </a>
+          </li>
+
         </ul>
-        <button type="button" class="hamburger">
-          <!-- material icons https://material.io/resources/icons/ -->
-          <i class="menuIcon material-icons">menu</i>
-          <i class="closeIcon material-icons">close</i>
-        </button>
-      </nav>
-    </header>
+      </div>
+      <div class="action-btn">
+        <a href="#profile">
+          <img src="./images/action-icon.png" alt="action-icon" />
+        </a>
+      </div>
+    </div>
+  </div>
 
-    <div class="background-img">
-      <div class="headline-container">
-        <section class="hero-container">
-          <h1>
-            Hey there. I'm Erik <br /><span>I'm a software developer</span>
-          </h1>
-          <p>
-            Are you looking for a FullStack developer to bring your idea
-            to life? Look no further! With my experience and expertise, I can
-            help you build a product, feature, or website that not only meets
-            your needs but exceeds your expectations. Don't wait any longer -
-            contact me today to get started on your next big project!
-          </p>
-        </section>
+  <!-- First page End -->
+  <div id="popup" class="popup"></div>
+  <!--Work section start -->
 
-        <div class="social-container">
-          <ul>
-            
-            <li>
-              <a href="https://www.linkedin.com/in/erkhemtugs-bayar-ochir-8263ba239/" target="_blank">
-                <img src="./images/Linkedin icon.svg" alt="Linkedin-icon" />
-              </a>
-            </li>
-            
-            <li>
-              <a href="https://github.com/erkhemtugsB" target="_blank">
-                <img src="./images/github.svg" alt="GitHub-icon" />
-              </a>
-            </li>
-            
-          </ul>
+  <section id="profile">
+    <div class="profile-content">
+      <h2 class="title">My Recent Works</h2>
+      <div class="indicator"></div>
+    </div>
+    <div class="project-container">
+      <div class="work">
+        <div class="grid-item2">
+          <div class="img-holder">
+            <img src="./ProjectImages/connect-donate.png" alt="to-do-list" />
+          </div>
         </div>
-        <div class="action-btn">
-          <a href="#profile">
-            <img src="./images/action-icon.png" alt="action-icon" />
-          </a>
+
+        <div class="grid-item3">
+          <h3 class="project-title">ConnectMNG Online Donation</h3>
+          <ul class="lang">
+            <li>React.js</li>
+            <li>Node.js</li>
+            <li>Paypal SDK</li>
+            <li>Regex</li>
+            <li>REST API</li>
+            <li>Git</li>
+          </ul>
+          <button onclick="dynamicpro(0)" class="project" type="button">
+            See Project
+          </button>
+        </div>
+      </div>
+
+      <div class="work">
+        <div class="grid-item2">
+          <div class="img-holder">
+            <img src="./ProjectImages/annasnail.png" alt="Annasnail" />
+          </div>
+        </div>
+
+        <div class="grid-item3">
+          <h3 class="project-title">Anna's Nail with booking</h3>
+          <ul class="lang">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Javascript</li>
+            <li>Netlify</li>
+            <li>Git</li>
+            <li>Bootstrap</li>
+          </ul>
+          <button onclick="dynamicpro(1)" class="project" type="button">
+            See Project
+          </button>
+        </div>
+      </div>
+
+      <div class="work">
+        <div class="grid-item2">
+          <div class="img-holder">
+            <img src="./ProjectImages/petzstar.png" alt="Pet Grooming Website in NY" />
+          </div>
+        </div>
+        <div class="grid-item3">
+          <h3 class="project-title">Pet Star Grooming NY</h3>
+          <ul class="lang">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Netlify</li>
+            <li>Git</li>
+            <li>Calendly</li>
+          </ul>
+          <button onclick="dynamicpro(2)" class="project" type="button">
+            See Project
+          </button>
+        </div>
+      </div>
+
+      <div class="work">
+        <div class="grid-item2">
+          <div class="img-holder">
+            <img src="./ProjectImages/dealership.png" alt="MNG Auto Club" />
+          </div>
+        </div>
+        <div class="grid-item3">
+          <h3 class="project-title">MNG Auto Club Admin Dashboard</h3>
+          <ul class="lang">
+            <li>HTML</li>
+            <li>JavaScript</li>
+            <li>CSS</li>
+            <li>Flask</li>
+            <li>TailWindCSS</li>
+            <li>REST API</li>
+            <li>CI/CD</li>
+            <li>Git</li>
+          </ul>
+          <button onclick="dynamicpro(3)" class="project" type="button">
+            See Project
+          </button>
+        </div>
+      </div>
+
+      <div class="work">
+        <div class="grid-item2">
+          <div class="img-holder">
+            <img src="./ProjectImages/online.shop.png" alt="Online Shop" />
+          </div>
+        </div>
+        <div class="grid-item3">
+          <h3 class="project-title">Online Shop Inventory Manager</h3>
+          <ul class="lang">
+            <li>HTML</li>
+            <li>JavaScript</li>
+            <li>CSS</li>
+            <li>Flask</li>
+            <li>TailWindCSS</li>
+            <li>REST API</li>
+            <li>Email.js</li>
+            <li>Git</li>
+          </ul>
+          <button onclick="dynamicpro(4)" class="project" type="button">
+            See Project
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- work section end  -->
+
+  <!-- About me section start -->
+
+  <section id="about">
+    <div class="about-background-image">
+      <div class="about-box">
+        <div class="about-content">
+          <h2 class="title">About me</h2>
+          <div class="indicator"></div>
+          <div class="about">
+            <p>
+              I'm a passionate full-stack developer with expertise in React, Vue, Node.js, MySQL,
+              Flask, and C#. With a strong track record of building intuitive and efficient web
+              applications, I thrive in solving complex problems and delivering automated systems for efficiency.
+              My experience includes developing real-time systems, implementing secure payment features,
+              and automation. I take pride in writing clean, maintainable code and enjoy
+              collaborating to bring innovative ideas to life. Let’s connect and discuss how I can contribute to
+              your next project!
+            </p>
+          </div>
+        </div>
+        <div class="about-button">
+          <a href="./ProjectImages/Erik_resume.pdf" class="resume" target="_blank" rel="noopener">
+            Get My Resume</a>
         </div>
       </div>
     </div>
 
-    <!-- First page End -->
-    <div id="popup" class="popup"></div>
-    <!--Work section start -->
+    <!-- Lunguage start -->
 
-    <section id="profile">
-      <div class="profile-content">
-        <h2 class="title">My Recent Works</h2>
-        <div class="indicator"></div>
-      </div>
-      <div class="project-container">
-        <div class="work">
-          <div class="grid-item2">
-            <div class="img-holder">
-              <img src="./ProjectImages/connect-donate.png" alt="to-do-list" />
-            </div>
-          </div>
-
-          <div class="grid-item3">
-            <h3 class="project-title">ConnectMNG Online Donation</h3>
-            <ul class="lang">
-              <li>React.js</li>
-              <li>Node.js</li>
-              <li>Paypal SDK</li>
-              <li>Regex</li>
-              <li>REST API</li>
-              <li>Git</li>
-            </ul>
-            <button onclick="dynamicpro(0)" class="project" type="button">
-              See Project
-            </button>
-          </div>
+    <div class="about-section">
+      <div class="lang-section">
+        <div class="lang-icon">
+          <img src="./images/Icon Langguage.png" alt="Lunguage icon" />
         </div>
-
-        <div class="work">
-          <div class="grid-item2">
-            <div class="img-holder">
-              <img
-                src="./ProjectImages/annasnail.png"
-                alt="Annasnail"
-              />
-            </div>
-          </div>
-
-          <div class="grid-item3">
-            <h3 class="project-title">Anna's Nail with booking</h3>
-            <ul class="lang">
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>Javascript</li>
-              <li>Netlify</li>
-              <li>Git</li>
-              <li>Bootstrap</li>
-            </ul>
-            <button onclick="dynamicpro(1)" class="project" type="button">
-              See Project
-            </button>
-          </div>
-        </div>
-
-        <div class="work">
-          <div class="grid-item2">
-            <div class="img-holder">
-              <img
-                src="./ProjectImages/petzstar.png"
-                alt="Pet Grooming Website in NY"
-              />
-            </div>
-          </div>
-          <div class="grid-item3">
-            <h3 class="project-title">Pet Star Grooming NY</h3>
-            <ul class="lang">
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>JavaScript</li>
-              <li>Netlify</li>
-              <li>Git</li>
-              <li>Calendly</li>
-            </ul>
-            <button onclick="dynamicpro(2)" class="project" type="button">
-              See Project
-            </button>
-          </div>
-        </div>
-
-        <div class="work">
-          <div class="grid-item2">
-            <div class="img-holder">
-              <img
-                src="./ProjectImages/dealership.png"
-                alt="MNG Auto Club"
-              />
-            </div>
-          </div>
-          <div class="grid-item3">
-            <h3 class="project-title">MNG Auto Club Admin Dashboard</h3>
-            <ul class="lang">
-              <li>HTML</li>
-              <li>JavaScript</li>
-              <li>CSS</li>
-              <li>Flask</li>
-              <li>TailWindCSS</li>
-              <li>REST API</li>
-              <li>CI/CD</li>
-              <li>Git</li>
-            </ul>
-            <button onclick="dynamicpro(3)" class="project" type="button">
-              See Project
-            </button>
-          </div>
-        </div>
-
-        <div class="work">
-          <div class="grid-item2">
-            <div class="img-holder">
-              <img
-                src="./ProjectImages/online.shop.png"
-                alt="Online Shop"
-              />
-            </div>
-          </div>
-          <div class="grid-item3">
-            <h3 class="project-title">Online Shop Inventory Manager</h3>
-            <ul class="lang">
-              <li>HTML</li>
-              <li>JavaScript</li>
-              <li>CSS</li>
-              <li>Flask</li>
-              <li>TailWindCSS</li>
-              <li>REST API</li>
-              <li>Email.js</li>
-              <li>Git</li>
-            </ul>
-            <button onclick="dynamicpro(4)" class="project" type="button">
-              See Project
-            </button>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- work section end  -->
-
-    <!-- About me section start -->
-
-    <section id="about">
-      <div class="about-background-image">
-        <div class="about-box">
-          <div class="about-content">
-            <h2 class="title">About me</h2>
-            <div class="indicator"></div>
-            <div class="about">
-              <p>
-                I'm a passionate full-stack developer with expertise in React, Vue, Node.js, MySQL,
-                Flask, and C#. With a strong track record of building intuitive and efficient web 
-                applications, I thrive in solving complex problems and delivering automated systems for efficiency. 
-                My experience includes developing real-time systems, implementing secure payment features, 
-                and automation. I take pride in writing clean, maintainable code and enjoy 
-                collaborating to bring innovative ideas to life. Let’s connect and discuss how I can contribute to 
-                your next project!
-              </p>
-            </div>
-          </div>
-          <div class="about-button">
-            <a
-              href="./ProjectImages/Erik_resume.pdf"
-              class="resume"
-              target="_blank"
-              rel="noopener"
-            >
-              Get My Resume</a
-            >
-          </div>
-        </div>
+        <h3 class="Language">Languages</h3>
+        <ul class="lang2">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>TypeScript</li>
+          <li>SQL</li>
+          <li>Python</li>
+          <li>C#</li>
+          <li>C++</li>
+          <li>Java</li>
+        </ul>
       </div>
 
-      <!-- Lunguage start -->
+      <!-- Lunguage end -->
 
-      <div class="about-section">
-        <div class="lang-section">
-          <div class="lang-icon">
-            <img src="./images/Icon Langguage.png" alt="Lunguage icon" />
-          </div>
-          <h3 class="Language">Languages</h3>
-          <ul class="lang2">
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>TypeScript</li>
-            <li>SQL</li>
-            <li>Python</li>
-            <li>C#</li>
-            <li>C++</li>
-            <li>Java</li>
-          </ul>
+      <!-- Framwork start -->
+
+      <div class="frameworks">
+        <div class="frame-icon">
+          <img src="./images/Framwork-icon.png" alt="Frameworks icon" />
         </div>
+        <h3 class="frame-title">Frameworks</h3>
+        <ul class="frame-list">
+          <li>React.js</li>
+          <li>Node.js</li>
+          <li>Flask</li>
+          <li>Django</li>
+          <li>Scrapy</li>
+          <li>ASP.NET</li>
+          <li>TailWindCSS</li>
+          <li>Bootstrap</li>
+          <li>Firebase</li>
+        </ul>
+      </div>
 
-        <!-- Lunguage end -->
+      <!-- Framwork end -->
 
-        <!-- Framwork start -->
-
-        <div class="frameworks">
-          <div class="frame-icon">
-            <img src="./images/Framwork-icon.png" alt="Frameworks icon" />
-          </div>
-          <h3 class="frame-title">Frameworks</h3>
-          <ul class="frame-list">
-            <li>React.js</li>
-            <li>Node.js</li>
-            <li>Flask</li>
-            <li>Django</li>
-            <li>Scrapy</li>
-            <li>ASP.NET</li>
-            <li>TailWindCSS</li>
-            <li>Bootstrap</li>
-            <li>Firebase</li>
-          </ul>
+      <!-- Skills starts -->
+      <div class="skills">
+        <div class="skills-icon">
+          <img src="./images/Skills-icon.svg" alt="Skills icon" />
         </div>
-
-        <!-- Framwork end -->
-
-        <!-- Skills starts -->
-        <div class="skills">
-          <div class="skills-icon">
-            <img src="./images/Skills-icon.svg" alt="Skills icon" />
-          </div>
-          <h3 class="Skills-title">Technologies</h3>
-          <ul class="skills-list">
-            <li>Terminal</li>
-            <li>GitHub</li>
-            <li>Git</li>
-            <li>Netlify</li>
-            <li>Render</li>
-            <li>Jira</li>
-            <li>SQL Server</li>
-            <li>Firebase</li>
-            <li>REST API</li>
-            <li>PostMan</li>
-            <li>BeautifulSoup4</li>
-          </ul>
-        </div>
+        <h3 class="Skills-title">Technologies</h3>
+        <ul class="skills-list">
+          <li>Terminal</li>
+          <li>GitHub</li>
+          <li>Git</li>
+          <li>Netlify</li>
+          <li>Render</li>
+          <li>Jira</li>
+          <li>SQL Server</li>
+          <li>Firebase</li>
+          <li>REST API</li>
+          <li>PostMan</li>
+          <li>BeautifulSoup4</li>
+        </ul>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Skills end -->
+  <!-- Skills end -->
 
-    <!-- About section end -->
+  <!-- About section end -->
 
-    <!-- Form start  -->
+  <!-- Form start  -->
 
-    <form id="contact" action="https://formspree.io/f/xyyvwazk" method="POST">
-      <h2>
-        I'm always intersted in hearing about new projects, so if you'd like to
-        chat please get in touch.
-      </h2>
-      <div class="form">
-        <input
-          type="text"
-          class="input"
-          name="user_name"
-          id="user_name"
-          placeholder="Full name"
-          maxlength="30"
-          required
-        />
+  <form id="contact" action="https://formspree.io/f/xyyvwazk" method="POST">
+    <h2>
+      I'm always intersted in hearing about new projects, so if you'd like to
+      chat please get in touch.
+    </h2>
+    <div class="form">
+      <input type="text" class="input" name="user_name" id="user_name" placeholder="Full name" maxlength="30"
+        required />
 
-        <input
-          type="email"
-          class="input"
-          id="email"
-          name="email_address"
-          placeholder="Email address"
-          required
-        />
-        <textarea
-          class="input"
-          name="message"
-          id="message"
-          maxlength="300"
-          required
-          placeholder="Type something"
-        ></textarea>
-        <button id="btn" type="submit">Get in touch</button>
-        <small id="error"></small>
-      </div>
-    </form>
+      <input type="email" class="input" id="email" name="email_address" placeholder="Email address" required />
+      <textarea class="input" name="message" id="message" maxlength="300" required
+        placeholder="Type something"></textarea>
+      <button id="btn" type="submit">Get in touch</button>
+      <small id="error"></small>
+    </div>
+  </form>
 
-    <!-- Form end -->
+  <!-- Form end -->
 
-    <!-- Social section start -->
+  <!-- Social section start -->
 
-    <footer class="social-contact">
-      <ul>
-            
-        <li>
-          <a href="https://www.linkedin.com/in/erkhemtugs-bayar-ochir-8263ba239/" target="_blank">
-            <img src="./images/Linkedin icon.svg" alt="Linkedin-icon" />
-          </a>
-        </li>
-        
-        <li>
-          <a href="https://github.com/erkhemtugsB" target="_blank">
-            <img src="./images/github.svg" alt="GitHub-icon" />
-          </a>
-        </li>
-        
-      </ul>
-      <div class="email">
-        <a href="mujeeburahman4582@gmail.com" target="_blank">erhemevlee@gmail.com</a>
-      </div>
-    </footer>
+  <footer class="social-contact">
+    <ul>
 
-    <!-- Social section end -->
-    <script src="assets/js/modal.js"></script>
-    <script src="assets/js/form-validation.js"></script>
-    <script src="assets/js/storage.js"></script>
-    <script src="assets/js/navbar.js"></script>
-    <!-- <script src="./assets/js/profile.js"></script> -->
-  </body>
+      <li>
+        <a href="https://www.linkedin.com/in/erkhemtugs-bayar-ochir-8263ba239/" target="_blank">
+          <img src="./images/Linkedin icon.svg" alt="Linkedin-icon" />
+        </a>
+      </li>
+
+      <li>
+        <a href="https://github.com/erkhemtugsB" target="_blank">
+          <img src="./images/github.svg" alt="GitHub-icon" />
+        </a>
+      </li>
+
+    </ul>
+    <div class="email">
+      <a href="erhemevlee@gmail.com" target="_blank">erhemevlee@gmail.com</a>
+    </div>
+  </footer>
+
+  <!-- Social section end -->
+  <script src="assets/js/modal.js"></script>
+  <script src="assets/js/form-validation.js"></script>
+  <script src="assets/js/storage.js"></script>
+  <script src="assets/js/navbar.js"></script>
+  <!-- <script src="./assets/js/profile.js"></script> -->
+</body>
+
 </html>
